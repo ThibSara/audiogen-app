@@ -1,7 +1,7 @@
 "use client";
 import { PlayIcon } from "../../../public/icon/PlayIcon";
 import { PauseIcon } from "../../../public/icon/PauseIcon";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { useAudioPlayer } from "../AudioPlayerProvider";
 
 type PlayButtonProps = {
