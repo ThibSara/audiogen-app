@@ -41,6 +41,7 @@ export function PromptForm() {
       } catch (error) {
         setIsLoading(false);
         alert("Failed to generate audio. Please try again.");
+        console.error("Error generating audio:", error);
       }
     }
   };
