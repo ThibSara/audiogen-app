@@ -35,10 +35,12 @@ export function PromptForm() {
           setAudioUrl(url);
           setIsLoading(false);
         } else {
-          console.error("Response error:", response.statusText);
+          setIsLoading(false);
+          alert("Failed to generate audio. Please try again.");
         }
       } catch (error) {
-        console.error("Error:", error);
+        setIsLoading(false);
+        alert("Failed to generate audio. Please try again.");
       }
     }
   };
